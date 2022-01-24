@@ -204,9 +204,9 @@ loopTxt
 #  SHIP_material_color_a        Voodoo
 #  SHIP_material_color_b        Voodoo
 #  SHIP_engine_color            Burn and trailing color of the engine(s)
-#  SHIP_collider_z              Length of the collission box
-#  SHIP_collider_y              Height of the collission box
-#  SHIP_collider_x              Width of the collission box
+#  SHIP_collider_z              Unused
+#  SHIP_collider_y              Unused
+#  SHIP_collider_x              Unused
 ##
 ## Life Support (Self explanatory, always 0 in the ship files)
 #  SHIP_ls_points
