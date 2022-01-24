@@ -3,7 +3,7 @@
 # This script exports ship data from the Astrox MOD/ships directory to a .csv file.
 
 # Path to the Astrox Imperium/Astrox Imperium_Data/MOD/ships/ -directory:
-# For windows, use: C:\\\path\\\to\\\ships
+# For windows, use: C:/path/to/ships
 source = "/home/user/.local/share/Steam/steamapps/common/Astrox Imperium/Astrox Imperium_Data/MOD/ships/"
 
 # Make 'SHIP_specials_raw' human readable? (True/False)
