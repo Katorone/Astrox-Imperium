@@ -3,11 +3,14 @@
 # This script exports ship data from the Astrox MOD/ships directory to a .csv file.
 
 # Path to the Astrox Imperium/Astrox Imperium_Data/MOD/ships/ -directory:
-# For windows, use: C:/path/to/ships
+# For windows, use: C:\\\path\\\to\\\ships
 source = "/home/user/.local/share/Steam/steamapps/common/Astrox Imperium/Astrox Imperium_Data/MOD/ships/"
 
 # Make 'SHIP_specials_raw' human readable? (True/False)
 expandSpecials = True
+
+# Delimiter (If using the 'List separator'-trick on windows, change this to '|')
+delimiter = ';'
 
 # This array should contain all possible SHIP-keys, but can be ordered in any way.
 # The order of the keys also determines the order of the columns in the exported csv
@@ -99,7 +102,7 @@ def writeExport():
   line = ""
   for i in keys:
     if i[:2] == '//': continue
-    line=line+'"'+i+'";'
+    line=line+'"'+i+'"'+delimiter
   outfile.write(line+'\n')
   # Write data
   for i in shipdata.keys():  # Loop over the ships
@@ -107,7 +110,7 @@ def writeExport():
     for j in keys:           # Loop over the ordered keys
       if j[:2] == '//': continue
       val = shipdata[i].get(j, "")
-      line=line+'"'+val+'";'
+      line=line+'"'+val+'"'+delimiter
     outfile.write(line+'\n')
   outfile.close()
   # Move the tempfile to shipdata.csv
