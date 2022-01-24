@@ -11,4 +11,6 @@ Working with CSV files:
 - With LibreOffice Calc you won't have any issues. Just tell Calc to encapsulate the fields with '"' and split them on ';'
 - With Excel, things are trickier and some configuration is needed:
   - In Windows' Control Panel -> Regional Settings -> Additional Settings -> Change 'List separator' to '|'.
-  - In importShipData.py, change line 19 to `delimiter = '|'
+  - In importShipData.py, change line 19 to `delimiter = '|'`.
+
+
