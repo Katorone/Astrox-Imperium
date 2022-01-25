@@ -10,7 +10,7 @@
 # Any directory can be used as a target for the import, but this directory needs to have a copy of the original files.
 
 # Path to the csv
-# For windows, use: 'C:\path\to\shipdata.csv'
+# For windows, use: C:\path\to\shipdata.csv
 source = '/home/user/path/to/Astrox/shipdata.csv'
 # Path to the Astrox Imperium ship-files
 target = '/home/user/.local/share/Steam/steamapps/common/Astrox Imperium/Astrox Imperium_Data/MOD/ships/'
@@ -154,10 +154,9 @@ def createDatastructure():
         print("The key '"+key+"' was set to be deleted, yet exists in the csv. The key and values from the csv will still be written to the ship files.")
       # Excel doesn't export an empty field when it's the last on a row.
       # By checking the length of the line against the position of the header, we can avoid an error.
-      if idx <= line.len():
+      if idx <= len(line):
         shipdata[filename][key] = line[idx]
   validateKeys(csvKeys)
   processShipFiles()
 
 createDatastructure()
-
