@@ -10,10 +10,10 @@
 # Any directory can be used as a target for the import, but this directory needs to have a copy of the original files.
 
 # Path to the csv
-# For windows, use: C:/path/to/shipdata.csv
-source = "/home/user/path/to/Astrox/shipdata.csv"
+# For windows, use: 'C:\path\to\shipdata.csv'
+source = '/home/user/path/to/Astrox/shipdata.csv'
 # Path to the Astrox Imperium ship-files
-target = "/home/user/.local/share/Steam/steamapps/common/Astrox Imperium/Astrox Imperium_Data/MOD/ships/"
+target = '/home/user/.local/share/Steam/steamapps/common/Astrox Imperium/Astrox Imperium_Data/MOD/ships/'
 
 # Delimiter used in the csv.  When using the Excel-trick from the readme, change this to '|'
 delimiter = '";"'
