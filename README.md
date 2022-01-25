@@ -15,4 +15,10 @@ Working with CSV files:
   - In csv_2_shipdata.py, change line 19 to `delimiter = '|'`.
   - If you want to be able to doubleclick the csv and immediately open it with excel, change shipdata_2_csv.py:line 13 to `delimiter = '|'`.
 
-
+Example of a .bat script to use on windows:
+```batch
+C:\Users\UserName\AppData\Local\Programs\Python\Python310\python.exe C:\AstroxFiles\shipdata_2_csv.py
+pause
+```
+Running this batch file (with paths adjusted for your system) will create shipdata.csv in the same directory.
+Adding `pause` will make sure the console window remains open, so you can see the script's output.
