@@ -6,6 +6,7 @@ A collection of scripts aimed at datacollection and modding of Astrox Imperium
 - shipdata.sh - A bash script that exports a configurable list of keys from the Atrox Imperium ship-files and creates a csv.
 
 Get Python 3 here: https://www.python.org/downloads/
+When installing Python on windows, I strongly suggest to enable the option to add python to the PATH.  This will make it easier to create bat files.
 
 Working with CSV files:
 - With LibreOffice Calc you won't have any issues. Just tell Calc to encapsulate the fields with '"' and split them on ';' when exporting your spreadsheet back to csv for csv-2-shipdata.
