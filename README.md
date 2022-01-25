@@ -13,6 +13,6 @@ Working with CSV files:
 - With Excel, things are trickier and some configuration is needed:
   - In Windows' Control Panel -> Regional Settings -> Additional Settings -> Change 'List separator' to '|'.
   - In csv-2-shipdata.py, change line 19 to `delimiter = '|'`.
-  - If you want to be able to doubleclick the csv and immediately open it with excel, change shipdata-2-csv.py:line 13 to `delimiter='|'`.
+  - If you want to be able to doubleclick the csv and immediately open it with excel, change shipdata-2-csv.py:line 13 to `delimiter = '|'`.
 
 
