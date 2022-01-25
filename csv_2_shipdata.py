@@ -15,14 +15,13 @@ source = "/home/user/path/to/Astrox/shipdata.csv"
 # Path to the Astrox Imperium ship-files
 target = "/home/user/.local/share/Steam/steamapps/common/Astrox Imperium/Astrox Imperium_Data/MOD/ships/"
 
-# Delimiter used in the csv
+# Delimiter used in the csv.  When using the Excel-trick from the readme, change this to '|'
 delimiter = '";"'
 
 # Are there any keys that have to be deleted from all files?  List them here:
 deleteKeys = [
   "SHIP_id"
 ]
-
 
 # Import settings from exportShipdata.py?
 # If False, you need to manually edit the 'keys' variable
