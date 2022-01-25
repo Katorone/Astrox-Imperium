@@ -18,6 +18,12 @@ target = "/home/user/.local/share/Steam/steamapps/common/Astrox Imperium/Astrox 
 # Delimiter used in the csv
 delimiter = '";"'
 
+# Are there any keys that have to be deleted from all files?  List them here:
+deleteKeys = [
+  "SHIP_id"
+]
+
+
 # Import settings from exportShipdata.py?
 # If False, you need to manually edit the 'keys' variable
 #   I suggest to keep this to True, so both exportShipdata and importShipdata have consistent behavior.
@@ -89,6 +95,8 @@ def processShipFiles():
         fileKey = line.split(';')[0]
         if fileKey in validKeys:        #   check if the key of this line is in validkeys
           continue
+        elif fileKey in deleteKeys:     #   If the key needs to be deleted, don't copy it over.
+          continue
         else:
           newdata.append(line)          #    Copy the line if it doesn't have a configured key in 'keys'
       else:
@@ -143,7 +151,12 @@ def createDatastructure():
       if key == 'SHIP_specials_raw':
         line[idx] = ",".join(line[idx].split('\r'))
         line[idx] = "#".join(line[idx].split(': '))
-      shipdata[filename][key] = line[idx]
+      if key in deleteKeys:
+        print("The key '"+key+"' was set to be deleted, yet exists in the csv. The key and values from the csv will still be written to the ship files.")
+      # Excel doesn't export an empty field when it's the last on a row.
+      # By checking the length of the line against the position of the header, we can avoid an error.
+      if idx <= line.len():
+        shipdata[filename][key] = line[idx]
   validateKeys(csvKeys)
   processShipFiles()
 
