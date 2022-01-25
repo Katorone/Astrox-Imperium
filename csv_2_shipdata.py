@@ -35,7 +35,7 @@ shipdata = {}
 exportdata = {}
 validKeys = []
 if copyKeys:
-  from 'shipdata-2-csv' import keys
+  from shipdata_2_csv import keys
 
 # reads data from path
 def readFile(path):
