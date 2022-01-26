@@ -189,7 +189,7 @@ def sanityCheck(items, itemHeader, docs, docsHeader):
     print("   Items that are uncraftable by design can be added to the 'ignoreUncraftable'-list in itemdb_2_csv.py")
     print("------------------------------")
   else:
-    print("✔️ All items have a crafting document attached.")
+    print("✔️ All items have a crafting document attached (with "+str(len(ignoreUncraftable))+" ignored uncraftables).")
   # For the orphaned check, we find docIDs that are missing in itemIDs
   itemSet = set(itemIDs)
   missingItems = [x for x in docIDs if x not in itemSet]
