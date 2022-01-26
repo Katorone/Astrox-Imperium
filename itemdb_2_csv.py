@@ -204,11 +204,15 @@ def checkFileLinks(data, header):
   if headerIdentifier == -1:
     print("🛑 couldn't locate '"+header+"' in checkFileLinks(), unable to continue sanity check.")
     return
+  haserror = False
   for i in data:
     if i == delimiter+'header'+delimiter: continue
     file = data[i][headerIdentifier]
     if not os.path.isfile(os.path.join(source, file)):
-      print("Item id '"+i+"' links to '"+file+"', which doesn't exists.")
+      haserror = True
+      print("❌ Item id '"+i+"' links to '"+file+"', which doesn't exists.")
+  if not haserror:
+    print("✔️ All files in column "+header+" exist.")
 
 if __name__ == "__main__":
   itemData = parseFile(itemfile, header["itemId"])
