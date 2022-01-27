@@ -25,4 +25,5 @@ Adding `pause` will make sure the console window remains open, so you can see th
 
 
 Libreoffice Calc import settings for csv:
+
 ![image](https://user-images.githubusercontent.com/918422/151455249-13715516-f0aa-41f6-9eda-ad9e3a8818f0.png)
