@@ -22,3 +22,7 @@ pause
 ```
 Running this batch file (with paths adjusted for your system) will create shipdata.csv in the same directory.
 Adding `pause` will make sure the console window remains open, so you can see the script's output.
+
+
+Libreoffice Calc import settings for csv:
+![image](https://user-images.githubusercontent.com/918422/151455249-13715516-f0aa-41f6-9eda-ad9e3a8818f0.png)
