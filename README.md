@@ -23,7 +23,6 @@ C:\Users\UserName\AppData\Local\Programs\Python\Python310\python.exe C:\AstroxFi
 pause
 ```
 Running this batch file (with paths adjusted for your system) will create shipdata.csv in the same directory.
-Adding `pause` will make sure the console window remains open, so you can see the script's output.
 
 
 Libreoffice Calc import settings for csv:
