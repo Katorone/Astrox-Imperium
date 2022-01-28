@@ -3,7 +3,7 @@ A collection of scripts aimed at datacollection and modding of Astrox Imperium
 
 - shipdata/
   - shipdata_2_csv.py - Exports data from the Astrox Imperium ship-files and creates a csv.
-  - csv_2_shipdata.py - Imports data from a csv and exports it to Astrox Imperium ship-files (designed to be used with exportShipdata.py).
+  - csv_2_shipdata.py - Imports data from a csv and exports it to Astrox Imperium ship-files (designed to be used with shipdata_2_csv.py).
 - itemdb/
   - itemdb_2_csv.py - Exports items_database.txt and specs_database.txt to csv and performs sanity checks.
 
