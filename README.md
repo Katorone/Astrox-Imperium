@@ -14,8 +14,7 @@ Working with CSV files:
 - With LibreOffice Calc you won't have any issues. Just tell Calc to encapsulate the fields with '"' and split them on ';' when exporting your spreadsheet back to csv for csv_2_shipdata.
 - With Excel, things are trickier and some configuration is needed:
   - In Windows' Control Panel -> Regional Settings -> Additional Settings -> Change 'List separator' to '|'.
-  - In csv_2_shipdata.py, change line 19 to `delimiter = '|'`.
-  - If you want to be able to doubleclick the csv and immediately open it with excel, change shipdata_2_csv.py:line 13 to `delimiter = '|'`.
+  - In shipdata_settings.py, change the delimiter to `delimiter['write_csv'] = "|"` and `delimiter['read_csv'] = "|"`.
 
 Example of a .bat script to use on windows:
 ```batch
