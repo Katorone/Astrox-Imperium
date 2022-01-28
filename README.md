@@ -1,11 +1,13 @@
 # Astrox-Imperium
 A collection of scripts aimed at datacollection and modding of Astrox Imperium
 
-- shipdata_2_csv.py - Exports data from the Astrox Imperium ship-files and creates a csv.
-- csv_2_shipdata.py - Imports data from a csv and exports it to Astrox Imperium ship-files (designed to be used with exportShipdata.py).
-- shipdata.sh - A bash script that exports a configurable list of keys from the Atrox Imperium ship-files and creates a csv.
+- hipdata/
+  - shipdata_2_csv.py - Exports data from the Astrox Imperium ship-files and creates a csv.
+  - csv_2_shipdata.py - Imports data from a csv and exports it to Astrox Imperium ship-files (designed to be used with exportShipdata.py).
+- itemdb/
+  - itemdb_2_csv.py - Exports items_database.txt and specs_database.txt to csv and performs sanity checks.
 
-Get Python 3 here: https://www.python.org/downloads/
+Requires Python 3 (get it here: https://www.python.org/downloads/)
 When installing Python on windows, I strongly suggest to enable the option to add python to the PATH.  This will make it easier to create bat files.
 
 Working with CSV files:
