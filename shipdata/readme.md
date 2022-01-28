@@ -12,6 +12,8 @@ As their names imply, these scripts can be used to read Astrox Imperium shipfile
 When upgrading from previous versions without shipdata_settings.py, I suggest to first download shipdata_settings.py and edit it with the settings you have in your current .py files.  Afterwards, download shipdata_2_csv.py and csv_2_shipdata.py as well, overwriting the older versions.
 
 For complex setups it's now possible to include these scripts in a toolchain.
-Both py scripts will accept the argument --config /path/to/custom_config.py
-   Example: python3 ~/Projects/Astrox/shipfiles_2_csv.py --config ~/Projects/AstroxModPack/modpacksettings.py
+Both py scripts will accept the argument `--config /path/to/custom_config.py`
+
+Example: `python3 ~/Projects/Astrox/shipfiles_2_csv.py --config ~/Projects/AstroxModPack/modpacksettings.py`
+
 The benefit here is that only a copy of this file needs to be adjusted while the actual scripts can be easily updated.
