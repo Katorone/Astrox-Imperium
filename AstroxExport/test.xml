@@ -1,0 +1,1160 @@
+<root>
+  <!--Astrox Imperium-->
+  <Events>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">1</ID>
+      <Title type="str" set="Events">(PERSON_1) elected in (FACTION_1)</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Political</Class>
+      <SubClass type="str" set="Events">Election</SubClass>
+      <Icon type="str" set="Events">event_election.png</Icon>
+      <Effect type="str" set="Events">ADJUST_FACTION</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.20</Frequency>
+      <Description_body type="str" set="Events">(PERSON_1) has been elected to the Local Council in the (FACTION_1) region. (PERSON_1) is well known for his negative stance against the (FACTION_2) faction. (FACTION_1) members will have to be more cautious when traveling the (FACTION_2) Region.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">2</ID>
+      <Title type="str" set="Events">Wanted Criminal, (PERSON_1) captured in (FACTION_1) space</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Faction</Class>
+      <SubClass type="str" set="Events">Crime</SubClass>
+      <Icon type="str" set="Events">event_criminal.png</Icon>
+      <Effect type="str" set="Events">ADJUST_FACTION</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.20</Frequency>
+      <Description_body type="str" set="Events">The wanted criminal raider (PERSON_1), was captured today by Commander (PERSON_2). The fugitive was hiding in the outskirts of the (FACTION_1) region. The (FACTION_2) faction administrators have been notified and have yet to comment on the arrest of (PERSON_1).</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">3</ID>
+      <Title type="str" set="Events">(FACTION_1) Council Member (PERSON_1)'s Referendum.</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Political</Class>
+      <SubClass type="str" set="Events">Political</SubClass>
+      <Icon type="str" set="Events">event_political.png</Icon>
+      <Effect type="str" set="Events">ADJUST_FACTION</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.20</Frequency>
+      <Description_body type="str" set="Events">The decision made by (PERSON_1) of the (FACTION_1) last week has been upheld by the Chief Counsel and is currently waiting approval from the (FACTION_2) Liaison, (PERSON_2). Once this referendum has been accepted, it will be a matter of days before the (FACTION_1) Council votes.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">4</ID>
+      <Title type="str" set="Events">(PERSON_1) Scandal effects (FACTION_1) Relations</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Faction</Class>
+      <SubClass type="str" set="Events">Political Scandal</SubClass>
+      <Icon type="str" set="Events">event_pscandal.png</Icon>
+      <Effect type="str" set="Events">ADJUST_FACTION</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.20</Frequency>
+      <Description_body type="str" set="Events">The breaking scandal involving (PERSON_1)'s illegal hiring of (PERSON_2) of the (FACTION_2) faction has brought recent Council decisions into question once again. Members of the (FACTION_1) Council have raised additional concerns about the nature of these private dealings. An investigation will soon be underway as Judicial officials prepare to state verdict upon the accused.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">5</ID>
+      <Title type="str" set="Events">Diplomatic Exchange at the (FACTION_1) Capitol</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Political</Class>
+      <SubClass type="str" set="Events">Diplomatic</SubClass>
+      <Icon type="str" set="Events">event_diplomatic.png</Icon>
+      <Effect type="str" set="Events">ADJUST_FACTION</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.20</Frequency>
+      <Description_body type="str" set="Events">(PERSON_1) remarked today at the (FACTION_1) Capitol that, 'We need to take a harsh stance against this ongoing criminal activity, propagated by (PERSON_2) of the (FACTION_2) faction.'. Members of the (FACTION_1) Council agree to take a vote on how future relations with the (FACTION_2) may be improved.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">6</ID>
+      <Title type="str" set="Events">Will (PERSON_1) Propose?</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Faction</Class>
+      <SubClass type="str" set="Events">Social</SubClass>
+      <Icon type="str" set="Events">event_proposal.png</Icon>
+      <Effect type="str" set="Events">ADJUST_FACTION</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.20</Frequency>
+      <Description_body type="str" set="Events">Recently, celebrity (PERSON_1) was spotted at a well known jewelry merchant in fashion district of the (FACTION_1) Region. It is speculated that there could be an upcoming marriage proposal in the future for Lady (PERSON_2). I guess we'll have to see how (PERSON_2)'s father of the (FACTION_2) faction will take it. Things could get interesting if this proves to be true.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">7</ID>
+      <Title type="str" set="Events">(PERSON_1) suspected of cheating on (PERSON_2)</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Faction</Class>
+      <SubClass type="str" set="Events">Social Scandal</SubClass>
+      <Icon type="str" set="Events">event_sscandal.png</Icon>
+      <Effect type="str" set="Events">ADJUST_FACTION</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.20</Frequency>
+      <Description_body type="str" set="Events">Photographs have surfaced of (PERSON_1) leaving a popular night spot in the (FACTION_1) district in the early morning hours with an unknown friend. Clearly (PERSON_2) was not happy about it and refused to comment when asked about what this could mean for their marriage. According to (FACTION_2) civil code, this could prove costly for (PERSON_1).</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">8</ID>
+      <Title type="str" set="Events">Skirmish between (FACTION_1) and (FACTION_2) in (SECTOR_1)</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Faction</Class>
+      <SubClass type="str" set="Events">Faction Skirmish</SubClass>
+      <Icon type="str" set="Events">event_battle.png</Icon>
+      <Effect type="str" set="Events">FACTION_BATTLE</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">(PERSON_1) of the (FACTION_1) faction has been credited with instigating a dispute with some local members of the (FACTION_2) faction. It is recommended that members of these factions avoid (SECTOR_1) until this skirmish has resolved itself.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">9</ID>
+      <Title type="str" set="Events">(FACTION_1) mining operation invade (SECTOR_1)</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Faction</Class>
+      <SubClass type="str" set="Events">Faction Mining</SubClass>
+      <Icon type="str" set="Events">event_mining.png</Icon>
+      <Effect type="str" set="Events">FACTION_MINING</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Miners of the (FACTION_1) faction have uncovered a pocket of valuable (RESOURCE_1) in the (SECTOR_1) sector. Since no faction can lay claim to these riches, those who arrive with the proper equipment will reap the benefits of this resource anomoly. The (FACTION_1) miners have a decent head start, so you might want to get started if you plan to take advantage of this opportunity.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">10</ID>
+      <Title type="str" set="Events">Market demand drops in (FACTION_1) regions</Title>
+      <Type type="str" set="Events">Labor</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_down.png</Icon>
+      <Effect type="str" set="Events">CLEAR_ORDERS</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">Market demand has dropped in a small number of (FACTION_1) controlled sectors. (PERSON_1), a local official has claimed that with the recent influx of labor, the demand for various goods and services have been met, thus forcing locals to find new jobs.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">11</ID>
+      <Title type="str" set="Events">Demand for Ore falls in (FACTION_1) locations</Title>
+      <Type type="str" set="Events">Labor</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_down.png</Icon>
+      <Effect type="str" set="Events">CLEAR_ORDERS</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">Ore</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">Market demand has fallen for local ore. The current mining trends have finally met the demands of production. A number of (FACTION_1) stations have been affected. As demand decreases for this ore, profits for these regions have just now started to feel its effect.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">12</ID>
+      <Title type="str" set="Events">Demand for market items fall in (FACTION_1) locations</Title>
+      <Type type="str" set="Events">Labor</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_down.png</Icon>
+      <Effect type="str" set="Events">CLEAR_ORDERS</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">Market demand has fallen for local ore. The current mining trends have finally met the demands of production. A number of (FACTION_1) stations have been affected. As demand decreases for this ore, profits for these regions have just now started to feel its effect.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">15</ID>
+      <Title type="str" set="Events">Market demand increases for Ore in (FACTION_1) region</Title>
+      <Type type="str" set="Events">Labor</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_BUY_ORDERS</Effect>
+      <value_1 type="str" set="Events">small</value_1>
+      <value_2 type="str" set="Events">Ore</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for raw local ore. The current mining trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for this ore, stability and security will likely spread and boost mining operations in the area. (PERSON_1), a local to the region was quoted saying, 'We knew this was coming, it always goes in cycles.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">16</ID>
+      <Title type="str" set="Events">Demand for Weapons rise in (FACTION_1) region</Title>
+      <Type type="str" set="Events">Law</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_BUY_ORDERS</Effect>
+      <value_1 type="str" set="Events">medium</value_1>
+      <value_2 type="str" set="Events">Active Module</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">Market demand for Active Modules is on the rise. The current security issues show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for these modules, stability and security will likely spread and boost security operations in the area. (PERSON_1), a local to the region was on record saying, 'About time somebody does something to help us out here.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">17</ID>
+      <Title type="str" set="Events">Trade goods are in demand for local (FACTION_1) sectors</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_BUY_ORDERS</Effect>
+      <value_1 type="str" set="Events">large</value_1>
+      <value_2 type="str" set="Events">Trade Good</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for trade goods across the region. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for these products, stability and security will likely spread and boost market revenues in the area. (PERSON_1), a local to the region was quoted saying, 'This will help to bring people into our community.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">18</ID>
+      <Title type="str" set="Events">Demand increases in (FACTION_1) region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_BUY_ORDERS</Effect>
+      <value_1 type="str" set="Events">small</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for a number of general items. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'We knew this was coming, it always goes in cycles.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">20</ID>
+      <Title type="str" set="Events">Market prices stabilize in (FACTION_1) region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Levels</SubClass>
+      <Icon type="str" set="Events">event_market_flux.png</Icon>
+      <Effect type="str" set="Events">ADJUST_MARKET</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">bal</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.35</Frequency>
+      <Description_body type="str" set="Events">Market prices have updated to reflect current commercial trends, and this correction has been reported to affect a small number of (FACTION_1) stations. As prices begin to level out, stability and security will boost productivity in the area. (PERSON_1), a local to the region was quoted saying, 'This could be very profitable for my community!'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">21</ID>
+      <Title type="str" set="Events">(FACTION_1) Reports a slow down in production</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Rise</SubClass>
+      <Icon type="str" set="Events">event_market_rise.png</Icon>
+      <Effect type="str" set="Events">ADJUST_MARKET</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">+price</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.40</Frequency>
+      <Description_body type="str" set="Events">Market prices in the (FACTION_1) region have been on the rise after the unexpected shutdown of a main production facility in the area. (PERSON_1), the facility Overseer, assured the crowds today, that both sides were working to find a profitable agreement for everyone involved. Production is said to restart next cycle.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">22</ID>
+      <Title type="str" set="Events">Market selloff in (FACTION_1) region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Drop</SubClass>
+      <Icon type="str" set="Events">event_market_drop.png</Icon>
+      <Effect type="str" set="Events">ADJUST_MARKET</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">-price</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">With the recent influx of low quality components spreading throughout the (FACTION_1) region, local markets have decided to purge old inventory in hopes of bring back customers. 'The new advertising campaign seems to be working!', said local shop owner (PERSON_1). With a little time, these markets should stabilize, thus promoting growth in the region.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">23</ID>
+      <Title type="str" set="Events">(FACTION_1) Reports an increase in production</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Supply Rise</SubClass>
+      <Icon type="str" set="Events">event_market_stock.png</Icon>
+      <Effect type="str" set="Events">ADJUST_MARKET</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">+qty</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">Market supply in the (FACTION_1) region have been on the rise after the re-opening of a main production facility in the area. (PERSON_1), the facility Overseer, assured the crowds today, that both sides were very happy to find a profitable agreement for everyone involved. Production is said to be in full swing.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">24</ID>
+      <Title type="str" set="Events">Market selloff in (FACTION_1) region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Supply Drop</SubClass>
+      <Icon type="str" set="Events">event_market_short.png</Icon>
+      <Effect type="str" set="Events">ADJUST_MARKET</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">-qty</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">With the recent influx of refugees spreading throughout the (FACTION_1) region, local markets have suffered with low supply and empty shelves. These stations are in dire need of resupply if they are expected to continue to sustain the local populations with food and water.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">25</ID>
+      <Title type="str" set="Events">(FACTION_1) Has restocked a number of stations.</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Supply Rise</SubClass>
+      <Icon type="str" set="Events">event_market_stock.png</Icon>
+      <Effect type="str" set="Events">ADJUST_MARKET</Effect>
+      <value_1 type="str" set="Events">sector</value_1>
+      <value_2 type="str" set="Events">+stock</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">Market supply in the (FACTION_1) region have been on the rise after a convoy of transport merchants restocked the area. (PERSON_1), the facility Overseer, assured the crowds today, that both sides were very happy to find a profitable trade agreement for everyone involved.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">26</ID>
+      <Title type="str" set="Events">Restock operation at (STATION_1) has been completed.</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Supply Rise</SubClass>
+      <Icon type="str" set="Events">event_market_stock.png</Icon>
+      <Effect type="str" set="Events">ADJUST_MARKET</Effect>
+      <value_1 type="str" set="Events">station</value_1>
+      <value_2 type="str" set="Events">+stock</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Market supply at (STATION_1) has been resupplied. (PERSON_1), the facility Overseer, informed the media today that crews are working around the clock to keep our markets supplied.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">27</ID>
+      <Title type="str" set="Events">Market warehouses are filling fast in (FACTION_1) regions</Title>
+      <Type type="str" set="Events">Labor</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Demand</SubClass>
+      <Icon type="str" set="Events">event_market_supply_up.png</Icon>
+      <Effect type="str" set="Events">ADD_SELL_ORDERS</Effect>
+      <value_1 type="str" set="Events">small</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.40</Frequency>
+      <Description_body type="str" set="Events">Market supply has increased as new production facilities in the (FACTION_1) region become fully operational over the next 2 cycles. It can be expected that local stations will begin to receive additional deliveries of goods and hardware.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">28</ID>
+      <Title type="str" set="Events">Market Sell Orders on the rise in (FACTION_1) regions</Title>
+      <Type type="str" set="Events">Labor</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Demand</SubClass>
+      <Icon type="str" set="Events">event_market_supply_up.png</Icon>
+      <Effect type="str" set="Events">ADD_SELL_ORDERS</Effect>
+      <value_1 type="str" set="Events">medium</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.40</Frequency>
+      <Description_body type="str" set="Events">Market supply has increased as new production facilities in the (FACTION_1) region become fully operational over the next 2 cycles. It can be expected that local stations will begin to receive additional deliveries of goods and hardware.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">29</ID>
+      <Title type="str" set="Events">Heavy Market Sell orders increases in (FACTION_1) regions</Title>
+      <Type type="str" set="Events">Labor</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Demand</SubClass>
+      <Icon type="str" set="Events">event_market_supply_up.png</Icon>
+      <Effect type="str" set="Events">ADD_SELL_ORDERS</Effect>
+      <value_1 type="str" set="Events">large</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.35</Frequency>
+      <Description_body type="str" set="Events">Market supply has increased as new production facilities in the (FACTION_1) region become fully operational over the next 2 cycles. It can be expected that local stations will begin to receive additional deliveries of goods and hardware.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">30</ID>
+      <Title type="str" set="Events">Huge Market Sell orders increases in (FACTION_1) regions</Title>
+      <Type type="str" set="Events">Labor</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Market Demand</SubClass>
+      <Icon type="str" set="Events">event_market_supply_up.png</Icon>
+      <Effect type="str" set="Events">ADD_SELL_ORDERS</Effect>
+      <value_1 type="str" set="Events">huge</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">Market supply has increased as new production facilities in the (FACTION_1) region become fully operational over the next 2 cycles. It can be expected that local stations will begin to receive additional deliveries of goods and hardware.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">31</ID>
+      <Title type="str" set="Events">(RESOURCE_1) discovered moving thru (SECTOR_1)</Title>
+      <Type type="str" set="Events">Labor</Type>
+      <Class type="str" set="Events">Faction</Class>
+      <SubClass type="str" set="Events">Resource Spawn</SubClass>
+      <Icon type="str" set="Events">event_resources.png</Icon>
+      <Effect type="str" set="Events">SECTOR_RESOURCES</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.30</Frequency>
+      <Description_body type="str" set="Events">Miners of the (SECTOR_1) sector have uncovered a pocket of valuable (RESOURCE_1). Since no faction can lay claim to these riches, those who arrive with the proper mining equipment will reap the benefits of this resource anomoly. Miners in the area have yet to lay claim to any of these resources, so you might want to get started if you plan to take advantage of this opportunity.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">32</ID>
+      <Title type="str" set="Events">Salvage discovered passing thru (SECTOR_1)</Title>
+      <Type type="str" set="Events">Labor</Type>
+      <Class type="str" set="Events">Faction</Class>
+      <SubClass type="str" set="Events">Resource Spawn</SubClass>
+      <Icon type="str" set="Events">event_salvage.png</Icon>
+      <Effect type="str" set="Events">SECTOR_SALVAGE</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.30</Frequency>
+      <Description_body type="str" set="Events">Salvagers of the (SECTOR_1) sector have uncovered a cache of valuable (RESOURCE_1). Since no faction can lay claim to this debris, those who arrive with the proper salvage equipment will reap the benefits of this resource anomoly. Salvagers in the area have yet to lay claim to any of these resources, hurry if you want to take advantage of this opportunity.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">40</ID>
+      <Title type="str" set="Events">Raider spotted in the (FACTION_1) region</Title>
+      <Type type="str" set="Events">Pirate</Type>
+      <Class type="str" set="Events">Raiders</Class>
+      <SubClass type="str" set="Events">Spawn</SubClass>
+      <Icon type="str" set="Events">event_raider_alert.png</Icon>
+      <Effect type="str" set="Events">RAIDERS</Effect>
+      <value_1 type="str" set="Events">1</value_1>
+      <value_2 type="str" set="Events">5</value_2>
+      <value_3 type="str" set="Events">npc_ship_data_(pirate_escort_1)</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">It has been reported that Raiders have been hiding in the region. It is recommended that all pilots traveling through this area keep their sensors active and weapons hot until the Astrox Security Patrol has time to clear this threat from the area.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">41</ID>
+      <Title type="str" set="Events">Tensions rise in (SECTOR_1). Raiders expected.</Title>
+      <Type type="str" set="Events">Pirate</Type>
+      <Class type="str" set="Events">Raiders</Class>
+      <SubClass type="str" set="Events">Spawn</SubClass>
+      <Icon type="str" set="Events">event_raider_alert.png</Icon>
+      <Effect type="str" set="Events">RAIDERS</Effect>
+      <value_1 type="str" set="Events">2</value_1>
+      <value_2 type="str" set="Events">3</value_2>
+      <value_3 type="str" set="Events">npc_ship_data_(pirate_escort_1)</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">After the A.S.P. recently left the area, Raiders have decided to return in an attempt to recover some of the loot that they were forced to leave behind. Be very careful when traveling through the (FACTION_1) region, as their exact whereabouts are not currently known.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">42</ID>
+      <Title type="str" set="Events">A gang invaded the (FACTION_1) region</Title>
+      <Type type="str" set="Events">Pirate</Type>
+      <Class type="str" set="Events">Raiders</Class>
+      <SubClass type="str" set="Events">Spawn</SubClass>
+      <Icon type="str" set="Events">event_raider_alert.png</Icon>
+      <Effect type="str" set="Events">RAIDERS</Effect>
+      <value_1 type="str" set="Events">5</value_1>
+      <value_2 type="str" set="Events">2</value_2>
+      <value_3 type="str" set="Events">npc_ship_data_(pirate_frigate_1)</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">A general warning has been issued for the (FACTION_1) region. Dangerous criminal elements have been reported in the area, and authorities recommend all citizens remain alert at all times. It is recommended that you do not travel alone, and if you do... you should be heavily armed for combat.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">43</ID>
+      <Title type="str" set="Events">Dangerous Raiders take camp in the (FACTION_1) region</Title>
+      <Type type="str" set="Events">Pirate</Type>
+      <Class type="str" set="Events">Raiders</Class>
+      <SubClass type="str" set="Events">Spawn</SubClass>
+      <Icon type="str" set="Events">event_raider_alert.png</Icon>
+      <Effect type="str" set="Events">RAIDERS</Effect>
+      <value_1 type="str" set="Events">10</value_1>
+      <value_2 type="str" set="Events">1</value_2>
+      <value_3 type="str" set="Events">npc_ship_data_(pirate_escort_1)</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Dangerous Raiders have been spotted in the (FACTION_1) region. It is important to remain observant when traveling through this area. Law enforcement authorities have been alerted and are currently looking for these raiders.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">44</ID>
+      <Title type="str" set="Events">Crime is on the rise in (SECTOR_1)</Title>
+      <Type type="str" set="Events">Pirate</Type>
+      <Class type="str" set="Events">Raiders</Class>
+      <SubClass type="str" set="Events">Spawn</SubClass>
+      <Icon type="str" set="Events">event_raider_alert.png</Icon>
+      <Effect type="str" set="Events">RAIDERS</Effect>
+      <value_1 type="str" set="Events">1</value_1>
+      <value_2 type="str" set="Events">1</value_2>
+      <value_3 type="str" set="Events">npc_ship_data_(recon_escort_raider)</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">A local hijacking has been reported in the (FACTION_1) region of Astrox. Authorities have investigated the matter and are not commenting on the investigation at this time. They did however ask everyone to remain aware and on guard when traveling through the region.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">45</ID>
+      <Title type="str" set="Events">Raiders launched from local structure</Title>
+      <Type type="str" set="Events">Pirate</Type>
+      <Class type="str" set="Events">Raiders</Class>
+      <SubClass type="str" set="Events">Spawn at Structure</SubClass>
+      <Icon type="str" set="Events">event_raider_alert.png</Icon>
+      <Effect type="str" set="Events">RAIDERS</Effect>
+      <value_1 type="str" set="Events">1</value_1>
+      <value_2 type="str" set="Events">2</value_2>
+      <value_3 type="str" set="Events">npc_ship_data_(pirate_escort_1)</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">It has been reported that Raiders have launched from the raider hideout. It is recommended that all pilots traveling through this area keep their sensors active and weapons hot until the Astrox Security Patrol has time to clear this threat from the area.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">46</ID>
+      <Title type="str" set="Events">Raider spotted in the (FACTION_1) region</Title>
+      <Type type="str" set="Events">Pirate</Type>
+      <Class type="str" set="Events">Raiders</Class>
+      <SubClass type="str" set="Events">Force Spawn</SubClass>
+      <Icon type="str" set="Events">event_raider_alert.png</Icon>
+      <Effect type="str" set="Events">RAIDERS</Effect>
+      <value_1 type="str" set="Events">1</value_1>
+      <value_2 type="str" set="Events">5</value_2>
+      <value_3 type="str" set="Events">npc_ship_data_(pirate_escort_1)</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">It has been reported that Raiders have been hiding in the region. It is recommended that all pilots traveling through this area keep their sensors active and weapons hot until the Astrox Security Patrol has time to clear this threat from the area.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">50</ID>
+      <Title type="str" set="Events">(STATION_1) Board of Education receives additional funding</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Research</Class>
+      <SubClass type="str" set="Events">Academic</SubClass>
+      <Icon type="str" set="Events">event_university_up.png</Icon>
+      <Effect type="str" set="Events">UNIVERSITY_PRICES</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">-price</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">(PERSON_1) made a public announcement today at the academic conference at (STATION_1) in the (FACTION_1) region. With additional funding allocated for this station, All classes offered to the general population have been reduced in cost. Hopefully this will encourage people to enroll in the university courses offered at this location.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">51</ID>
+      <Title type="str" set="Events">(STATION_1) Board of Education loses funding</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Research</Class>
+      <SubClass type="str" set="Events">Academic</SubClass>
+      <Icon type="str" set="Events">event_university_down.png</Icon>
+      <Effect type="str" set="Events">UNIVERSITY_PRICES</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">+price</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">(PERSON_1) made a public announcement today at the academic conference at (STATION_1) in the (FACTION_1) region. Due to budget constraints, the courses offered at this university will require additional payments for enrollment. (PERSON_1) was quoted saying 'It is a sad day for all of us educators here at (STATION_1).'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">52</ID>
+      <Title type="str" set="Events">Balanced Budget at the University of (STATION_1)</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Research</Class>
+      <SubClass type="str" set="Events">Academic</SubClass>
+      <Icon type="str" set="Events">event_university_bal.png</Icon>
+      <Effect type="str" set="Events">UNIVERSITY_PRICES</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">bal</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">After a lengthy meeting at the (STATION_1) conference center, (FACTION_1) board members have announced that they have come to an agreement on balancing the academic budget. Some classes will be provided additional resources, by trimming the fat from some of the over-budgeted courses.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">54</ID>
+      <Title type="str" set="Events">New (SHIPNAME) ship available at (STATION_1) station</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Research</Class>
+      <SubClass type="str" set="Events">New Ship</SubClass>
+      <Icon type="str" set="Events">event_new_ship.png</Icon>
+      <Effect type="str" set="Events">ADJUST_HANGAR</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">1</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">With the recent influx of resources pouring into the (FACTION_1) region, local markets have decided to begin production of a few starships. The first of these (SHIPNAME) ships have already reached a number of (FACTION_1) stations, and are currently available for purchase.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">55</ID>
+      <Title type="str" set="Events">New ship available in the (FACTION_1) region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Research</Class>
+      <SubClass type="str" set="Events">New Ship</SubClass>
+      <Icon type="str" set="Events">event_new_ship.png</Icon>
+      <Effect type="str" set="Events">ADJUST_HANGAR</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">5</value_3>
+      <Frequency type="str" set="Events">0.35</Frequency>
+      <Description_body type="str" set="Events">With the recent influx of resources pouring into the (FACTION_1) region, local markets have decided to begin production of a few starships. The first (SHIPNAME) ship has already arrived at (STATION_1), and is currently available for purchase.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">56</ID>
+      <Title type="str" set="Events">(FACTION_1) fabricators deliver new (SHIPNAME) ship.</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Research</Class>
+      <SubClass type="str" set="Events">New Ship</SubClass>
+      <Icon type="str" set="Events">event_new_ship.png</Icon>
+      <Effect type="str" set="Events">ADJUST_HANGAR</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">With the recent influx of resources pouring into the (FACTION_1) region, local markets have decided to begin production of a few starships. The first of these (SHIPNAME) ships have already reached a number of (FACTION_1) stations, and are currently available for purchase.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">57</ID>
+      <Title type="str" set="Events">Arrival of (SHIPNAME) ships in (FACTION_1) region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Research</Class>
+      <SubClass type="str" set="Events">New Ship</SubClass>
+      <Icon type="str" set="Events">event_new_ship.png</Icon>
+      <Effect type="str" set="Events">ADJUST_HANGAR</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">With the recent influx of resources pouring into the (FACTION_1) region, local markets have decided to begin production of a few starships. Head to (STATION_1) in the (FACTION_1) region if you would like to check out the new (SHIPNAME).</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">60</ID>
+      <Title type="str" set="Events">Security levels in (SECTOR_1) have Risen</Title>
+      <Type type="str" set="Events">Law</Type>
+      <Class type="str" set="Events">Security</Class>
+      <SubClass type="str" set="Events">Security</SubClass>
+      <Icon type="str" set="Events">event_security_up.png</Icon>
+      <Effect type="str" set="Events">SECURITY_LEVEL</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">+sec</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Additional Law Enforcement has been deployed to (SECTOR_1) in the (FACTION_1) region. Commander (PERSON_1) has announced that with the additional forces protecting (SECTOR_1), residents can expect less crime. Commander (PERSON_1) has issued a warning to all would-be raiders and outlaws alike, 'This is no longer a sanctuary for the lawless.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">61</ID>
+      <Title type="str" set="Events">(SECTOR_1) Security has dropped</Title>
+      <Type type="str" set="Events">Law</Type>
+      <Class type="str" set="Events">Security</Class>
+      <SubClass type="str" set="Events">Security</SubClass>
+      <Icon type="str" set="Events">event_security_down.png</Icon>
+      <Effect type="str" set="Events">SECURITY_LEVEL</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">-sec</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Resources in (SECTOR_1) have been on a steady decline for some time, causing law enforcement to cut back on it's available personnel. With less patrols on the job, crime is expected to rise in the coming weeks. Commander (PERSON_1) proclaimed that without immediate financial assistance, law enforcement will be unable to protect the residents of (SECTOR_1) properly.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">62</ID>
+      <Title type="str" set="Events">Security in (SECTOR_1) has been reviewed</Title>
+      <Type type="str" set="Events">Law</Type>
+      <Class type="str" set="Events">Security</Class>
+      <SubClass type="str" set="Events">Security</SubClass>
+      <Icon type="str" set="Events">event_security_bal.png</Icon>
+      <Effect type="str" set="Events">SECURITY_LEVEL</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">bal</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Law enforcement leaders of the (FACTION_1) region have reviewed the current security status of the (SECTOR_1) sector. Although no additional resources have been allocated to the region, (PERSON_1) believes that the new systems of crime detection, implemented earlier this cycle, will help cull the existing criminal elements in the area.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">70</ID>
+      <Title type="str" set="Events">Food production in (SECTOR_1) has Increased</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_food_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">+up</value_2>
+      <value_3 type="str" set="Events">food</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">(PERSON_1) made a statement early this cycle, making the noted increase in the region's food production level. 'It is clear that the season's crop is greatly due to the increase in Starlight we have received.'. With levels like this, everyone can expect a bountiful synth-harvest this season.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">71</ID>
+      <Title type="str" set="Events">Starlight reduction in (SECTOR_1)</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_food_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">-down</value_2>
+      <value_3 type="str" set="Events">food</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Scientists in (SECTOR_1) have recorded a significant drop in the levels of starlight throughout the sector. It is not currently known what has caused this reduction in the light emitted from the microstar, but resident remain concerned about food synthesis at the season comes to a close.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">72</ID>
+      <Title type="str" set="Events">Food Synthesis has leveled out in (SECTOR_1)</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_food_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">bal</value_2>
+      <value_3 type="str" set="Events">food</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Scientists in the (SECTOR_1) sector are happy to report that the starlight levels are returning to normal. It is not known at this time what caused the recent fluctuations, but is believed that these levels will completely return to normal in the coming cycles.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">73</ID>
+      <Title type="str" set="Events">Atmospheric Hydration of the (SECTOR_1) has risen</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_water_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">+up</value_2>
+      <value_3 type="str" set="Events">water</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Scientists have reported that the atmospheric hydration ratios have risen in recent cycles. (SECTOR_1) has been fairly stable for some time now. It is unknown as to why these changes have occurred, but scientists in the region have promised to continue researching.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">74</ID>
+      <Title type="str" set="Events">Water Crystals in (SECTOR_1) are disappearing</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_water_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">-down</value_2>
+      <value_3 type="str" set="Events">water</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Atmospheric hydration levels have fallen in (SECTOR_1). A number of local scientists have recently started researching this phenomenon. It is guessed that recent changes in solar wind patterns have altered the environment.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">75</ID>
+      <Title type="str" set="Events">Liquid H2O levels are Normalizing in (SECTOR_1)</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_water_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">bal</value_2>
+      <value_3 type="str" set="Events">water</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">New research has shown that the atmospheric hydration levels of the (SECTOR_1) sector have begun to level out. It has been many cycles since the scientists have been able to measure these levels due to a malfunction at the (PERSON_1) laboratory.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">76</ID>
+      <Title type="str" set="Events">Temperatures rise in (SECTOR_1)</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_thermal_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">+up</value_2>
+      <value_3 type="str" set="Events">thermal</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">temperatures in the (SECTOR_1) sector are on the rise. Specialists have been tracking the increase and warned the local populace that it may be time to upgrade your thermal life support systems. Local stations have had a hard time keeping thermal regulators in stock after this recent jump in temperature.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">77</ID>
+      <Title type="str" set="Events">(SECTOR_1) Begins to cool</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_thermal_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">-down</value_2>
+      <value_3 type="str" set="Events">thermal</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">(SECTOR_1) residents are breaking out the cold weather clothing after a recent drop in the sector's temperature. Scientists are claiming that the local microstar has been affected by recent waves of low level radiation passing through the sector. The temperature is expected to normalize in the coming cycles.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">78</ID>
+      <Title type="str" set="Events">A change of season as (SECTOR_1) temperatures level</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_thermal_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">bal</value_2>
+      <value_3 type="str" set="Events">thermal</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">As expected, the temperatures in (SECTOR_1) have begun to return to normal levels. Scientists in the region are confident that things will level out over the next few cycles. (PERSON_1) was quoted when asked about the recent change, 'This was a great opportunity for us to research how our microstar affects our weather patterns here in (SECTOR_1).'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">79</ID>
+      <Title type="str" set="Events">Waste levels (SECTOR_1) on the rise</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_waste_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">+up</value_2>
+      <value_3 type="str" set="Events">waste</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Local waste management officials are unable to keep space clean in (SECTOR_1). (FACTION_1) officials have been notified and local residents are not happy. With pollution levels this high, it is recommended you have a sufficient waste management system installed on your ships.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">80</ID>
+      <Title type="str" set="Events">A drop in (SECTOR_1)'s waste is commended</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_waste_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">-down</value_2>
+      <value_3 type="str" set="Events">waste</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Officials in (SECTOR_1) are happy to announce that waste levels in the sector have been reduced significantly. This should have to boost tourism and increase the quality of life for all the residents in (SECTOR_1) and the surrounding (FACTION_1) areas.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">81</ID>
+      <Title type="str" set="Events">In (SECTOR_1), Waste levels normalize</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Environment</SubClass>
+      <Icon type="str" set="Events">event_waste_flux.png</Icon>
+      <Effect type="str" set="Events">LIFE_SUPPORT</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">bal</value_2>
+      <value_3 type="str" set="Events">waste</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Waste Management officials have announced that the recent efforts to normalize waste levels in (SECTOR_1), have been successful. (PERSON_1) was credited with leading the effort to study these changes and how they affect the local lifeforms. A request has been made to the (FACTION_1) council for addition research funding.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">82</ID>
+      <Title type="str" set="Events">In (SECTOR_1), a strange energy surge has been detected.</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Scientific</SubClass>
+      <Icon type="str" set="Events">new_wormhole.png</Icon>
+      <Effect type="str" set="Events">WORMHOLE_GENERATE</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">null</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">Scientists have discovered a strange surge of the energy levels in (SECTOR_1). (PERSON_1), the lead scientist for the investigating research team thinks a wormhole could be present. Initial tests look promising, but the existence of a nearby wormhole has yet to be confirmed. The (FACTION_1) council has called for additional research funding in hopes of determining if a wormhole has spawned in (SECTOR_1).</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">83</ID>
+      <Title type="str" set="Events">Energy burst in (SECTOR_1), Locals search for Wormhole.</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Environment</Class>
+      <SubClass type="str" set="Events">Scientific</SubClass>
+      <Icon type="str" set="Events">new_wormhole.png</Icon>
+      <Effect type="str" set="Events">WORMHOLE_GENERATE</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">null</value_3>
+      <Frequency type="str" set="Events">0.15</Frequency>
+      <Description_body type="str" set="Events">A sudden burst of energy in (SECTOR_1) has locals looking for a possible wormhole. (PERSON_1) is convinced that a wormhole has spawned in the area. Initial tests look promising, but the existence of a nearby wormhole has yet to be confirmed. The (FACTION_1) locals have pulled together funds in hopes of determining if a wormhole has visited their area in (SECTOR_1).</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">95</ID>
+      <Title type="str" set="Events">Economic demand cycle peaks in (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_DEMAND</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for a number of specialized items. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations needs goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">96</ID>
+      <Title type="str" set="Events">Economic demand increases in (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_DEMAND</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for a number of specialized items. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations needs goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">97</ID>
+      <Title type="str" set="Events">Economic demand is boosted across (FACTION_1) Sectors</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_DEMAND</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for a number of specialized items. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations needs goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">98</ID>
+      <Title type="str" set="Events">Economic demand climbs in (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_DEMAND</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for a number of specialized items. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations needs goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">99</ID>
+      <Title type="str" set="Events">Economic demand produces shortage in (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_DEMAND</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for a number of specialized items. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations needs goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">100</ID>
+      <Title type="str" set="Events">Economic supply increased across (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Supply</SubClass>
+      <Icon type="str" set="Events">event_market_supply_up.png</Icon>
+      <Effect type="str" set="Events">ADD_SUPPLY</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market supply has increased for a number of specialized items. The current market trends show these sell orders have affected a small number of (FACTION_1) stations. As supply increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations produce goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">101</ID>
+      <Title type="str" set="Events">Economic supply cycle complete in (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Supply</SubClass>
+      <Icon type="str" set="Events">event_market_supply_up.png</Icon>
+      <Effect type="str" set="Events">ADD_SUPPLY</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market supply has increased for a number of specialized items. The current market trends show these sell orders have affected a small number of (FACTION_1) stations. As supply increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations produce goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">102</ID>
+      <Title type="str" set="Events">Economic supply boosted in (FACTION_1) Sectors</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Supply</SubClass>
+      <Icon type="str" set="Events">event_market_supply_up.png</Icon>
+      <Effect type="str" set="Events">ADD_SUPPLY</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market supply has increased for a number of specialized items. The current market trends show these sell orders have affected a small number of (FACTION_1) stations. As supply increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations produce goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">103</ID>
+      <Title type="str" set="Events">Economic supply rises in (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Supply</SubClass>
+      <Icon type="str" set="Events">event_market_supply_up.png</Icon>
+      <Effect type="str" set="Events">ADD_SUPPLY</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market supply has increased for a number of specialized items. The current market trends show these sell orders have affected a small number of (FACTION_1) stations. As supply increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations produce goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">104</ID>
+      <Title type="str" set="Events">Economic supply produces goods in (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Supply</SubClass>
+      <Icon type="str" set="Events">event_market_supply_up.png</Icon>
+      <Effect type="str" set="Events">ADD_SUPPLY</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market supply has increased for a number of specialized items. The current market trends show these sell orders have affected a small number of (FACTION_1) stations. As supply increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations produce goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">105</ID>
+      <Title type="str" set="Events">Economic demand cycle peaks in (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_DEMAND</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for a number of specialized items. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations needs goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">106</ID>
+      <Title type="str" set="Events">Economic demand increases in (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_DEMAND</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for a number of specialized items. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations needs goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">107</ID>
+      <Title type="str" set="Events">Economic demand is boosted across (FACTION_1) Sectors</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_DEMAND</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for a number of specialized items. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations needs goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">108</ID>
+      <Title type="str" set="Events">Economic demand climbs in (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_DEMAND</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for a number of specialized items. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations needs goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">109</ID>
+      <Title type="str" set="Events">Economic demand produces shortage in (FACTION_1) Region</Title>
+      <Type type="str" set="Events">Trade</Type>
+      <Class type="str" set="Events">Economic</Class>
+      <SubClass type="str" set="Events">Economic Demand</SubClass>
+      <Icon type="str" set="Events">event_market_demand_up.png</Icon>
+      <Effect type="str" set="Events">ADD_DEMAND</Effect>
+      <value_1 type="str" set="Events">0.5</value_1>
+      <value_2 type="str" set="Events">null</value_2>
+      <value_3 type="str" set="Events">rnd_faction_id</value_3>
+      <Frequency type="str" set="Events">0.10</Frequency>
+      <Description_body type="str" set="Events">Market demand has increased for a number of specialized items. The current market trends show these buy orders have affected a small number of (FACTION_1) stations. As demand increases for some items, stability and security will likely spread and boost the economy of the area. (PERSON_1), a local to the region was quoted saying, 'When local stations needs goods, everyone wins.'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">200</ID>
+      <Title type="str" set="Events">(PERSON_1) Wins the (FACTION_1) lottery!</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Social</Class>
+      <SubClass type="str" set="Events">Lottery</SubClass>
+      <Icon type="str" set="Events">event_lottery.png</Icon>
+      <Effect type="str" set="Events">NULL</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">(PERSON_1) was ecstatic to discover that they won the (FACTION_1) Lottery. Even though the grand prize was 500,000 zil, after the Alpharis Tax Commission got a hold of the winnings, (PERSON_1) was left with just over 130,000 zil. (PERSON_1) was quoted saying 'Every little bit helps, I am just glad to be a winner!'.</Description_body>
+    </row>
+    <row>
+      <Key type="str" set="Events">EVENT</Key>
+      <ID type="str" set="Events">201</ID>
+      <Title type="str" set="Events">(FACTION_1) Awards Ceremony was a great success!</Title>
+      <Type type="str" set="Events">Alpha</Type>
+      <Class type="str" set="Events">Social</Class>
+      <SubClass type="str" set="Events">Awards Ceremony</SubClass>
+      <Icon type="str" set="Events">event_awards.png</Icon>
+      <Effect type="str" set="Events">NULL</Effect>
+      <value_1 type="str" set="Events">rnd</value_1>
+      <value_2 type="str" set="Events">rnd</value_2>
+      <value_3 type="str" set="Events">rnd</value_3>
+      <Frequency type="str" set="Events">0.25</Frequency>
+      <Description_body type="str" set="Events">(FACTION_1) held their Awards for Excellence ceremony at the capital. It was hosted by the famous (PERSON_1), who arrived in fashion wearing a newly designed uniform. The event went smooth with many popular celebrities making an appearance.</Description_body>
+    </row>
+  </Events>
+</root>
