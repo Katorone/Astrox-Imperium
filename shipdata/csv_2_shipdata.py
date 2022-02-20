@@ -38,15 +38,24 @@ mod = importlib.import_module(config[:-3])
 
 # rewrites the data in ship files
 def processShipFiles(shipdata, validKeys):
+  source = mod.shipdata['source']
   target = mod.shipdata['target']
   for filename in shipdata.keys():
+    sourceFile = os.path.join(target, filename+".txt")
+    if mod.always_copy_originals == True:
+      sourceFile = os.path.join(source, filename+".txt")
     targetFile = os.path.join(target, filename+".txt")
-    data = mod.readFile(targetFile)
+    data = mod.readFile(sourceFile)
     newdata = list()
     modify = False
-    if not os.path.isfile(targetFile):
-      print("❌ WARNING: no such file '"+filename+"' in '"+target+"', ignoring record.")
-      continue
+    if mod.always_copy_originals == False:
+      if not os.path.isfile(targetFile):
+        print("❌ WARNING: no such file '"+filename+"' in '"+target+"', and 'always_copy_originals' is set to False. Ignoring record.")
+        continue
+    else:
+      if not os.path.isfile(sourceFile):
+        print("❌ WARNING: no such file '"+filename+"' in '"+source+"', and 'always_copy_originals' is set to True. Ignoring record.")
+        continue
     # Go over each line of the original ship text file
     for line in data:
       line = line.strip()
@@ -78,7 +87,7 @@ def processShipFiles(shipdata, validKeys):
       else:
         newdata.append(line)              #   Copy all lines when we're not in the editing block
     mod.writeFile(targetFile, newdata) # Write!
-  print("✔️ Finished writing the csv to the Astrox Imperium shipfiles")
+  print("✔️ Finished writing Astrox Imperium shipfiles from the csv")
 
 
 # Checks if all keys in 'keys' are in the csv
@@ -119,28 +128,38 @@ def validateKeys(csvKeys):
 # Create the data structure based on shipdata.csv
 deleteKeys = []
 def createDatastructure():
+  if not os.path.isfile(mod.shipdata['read_csv_location']):
+    print("🛑 Couldn't find the csv file: "+shipdata['read_csv_location'])
+    exitScript()
   data = mod.readFile(mod.shipdata['read_csv_location']) # Read the csv file to memory
-  csvKeys = mod.cleanLine(data[0], '"\t ', ';')          # Fetch the headers
+  csvKeys = mod.cleanLine(data[0], '"\t ', mod.delimiter['read_csv'])          # Fetch the headers
+  if mod.always_copy_originals == True:
+    print('✔️ Using unchanged ship data from: '+mod.shipdata['source'])
+  else:
+    print('✔️ Using unchanged ship data from: '+mod.shipdata['target'])
   # Only export the keys that are defined in keys['to_shipfile'] AND appear in the .csv
-  exportKeys = mod.commonListItems(csvKeys, mod.keys['to_shipfile'])
+  validKeys = mod.commonListItems(csvKeys, mod.keys['to_shipfile'])
+  exportKeys = mod.validListItems(csvKeys, mod.keys['to_shipfile'])
   # Check the index of 'SHIP_filename'
   filenameIndex = -1
   if 'SHIP_filename' in csvKeys:
     filenameIndex = csvKeys.index('SHIP_filename')
   else:
-    print("🛑 Couldn't find the field 'SHIP_filename' in "+shipdata['read_csv_location'])
+    print("🛑 Couldn't find the field 'SHIP_filename' in "+mod.shipdata['read_csv_location'])
     print("   It is mandatory to have this field, this script can't find the original txt file otherwise.")
     print("   Exiting")
     exitScript()
   # Map the data to the header keys to create 'key: value' pairs.
   shipdata = {}
   for line in data[1:]:
-    line = mod.cleanLine(line, '"\t ', ';')
+    line = mod.cleanLine(line, '"\t ', mod.delimiter['read_csv'])
     filename = line[filenameIndex]
     shipdata[filename] = {}
     # Loop through the header
-    for idx, key in enumerate(exportKeys):
+    for idx, key in enumerate(validKeys):
       # Fix 'SHIP_specials_raw'
+      if key[:2] == '//':
+        continue
       if key == 'SHIP_specials_raw':
         line[idx] = ",".join(line[idx].split('\r'))
         line[idx] = "#".join(line[idx].split(': '))
