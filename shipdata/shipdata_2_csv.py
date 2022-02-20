@@ -57,8 +57,8 @@ def parseFile(data, shipname):
   result = {}
   for line in data:
     line = mod.cleanLine(line, '\t ', ';')
+    if line == "": continue                             # Ignore empty lines
     key = line[0]
-    if key == "": continue                             # Ignore empty lines
     if key[:7] == '<STATS>': collect = True; continue  # Start collecting at <STATS>
     if key[:6] == '<ITEM>': break                      # Stop collecting at <ITEM>
     if key[:2] == '//': continue                       # Ignore comments
