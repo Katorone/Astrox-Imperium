@@ -25,15 +25,18 @@ delimiter = {}
 ## See the note on top about calling shipdata_2_csv.py and csv_2_shipdata.py with the config argument.
 ##
 # Path to the Astrox Imperium ship files you want to create a csv FROM
-shipdata['source'] = "~/.local/share/Steam/steamapps/common/Astrox Imperium/Astrox Imperium_Data/MOD/ships"
+shipdata['source'] = "~/Projects/Astrox/shipdata/source"
 # Path to the Astrox Imperium ship files you want to export a csv TO
 # IMPORTANT: Any directory can be used as a destination, but this directory needs to have a copy
 #            of Astrox ship files!
-shipdata['target'] = "~/Projects/Astrox/ships"
+shipdata['target'] = "~/Projects/Astrox/shipdata/target"
 # Path and name of the csv where to store shipdata TO
-shipdata['write_csv_location'] = "~/Projects/Astrox/shipdata.csv"
+shipdata['write_csv_location'] = "~/Projects/Astrox/shipdata/shipdata.csv"
 # Path and name of the csv where to read shipdata FROM
-shipdata['read_csv_location'] = "~/Projects/Astrox/shipdata.csv"
+shipdata['read_csv_location'] = "~/Projects/Astrox/shipdata/shipdata.csv"
+# With this setting enabled, csv_2_shipdata will always copy files from 'source' when writing to 'target'
+always_copy_originals = True
+
 
 # Pause after running the script?
 # When True, this settings adds: 'All done. Press enter to exit.' after the scripts run
@@ -49,7 +52,9 @@ keys['from_shipfiles'] = [
   "SHIP_base_cargo", "SHIP_base_lifesupport", "SHIP_base_mass", "SHIP_base_thrust",
   "SHIP_base_turn", "SHIP_base_engine_burn", "SHIP_base_speed", "SHIP_impact_resistance",
   "SHIP_energy_resistance", "SHIP_explosive_resistance", "SHIP_specials_raw",
-  "SHIP_description",
+  "SHIP_description", "SHIP_faction_id", "SHIP_base_recharge", "SHIP_base_shield_recharge",
+  "SHIP_base_scan_speed", "SHIP_base_scan_max_targets", "SHIP_base_scan_pulserange",
+  "SHIP_base_scan_pulsespeed", "SHIP_talent"
 ]
 # A list of keys to write TO the shipfiles from a csv.
 # If empty, the order from keys['from_shipfiles'] will be used.
@@ -126,13 +131,14 @@ delimiter['read_csv'] = ";"
 
 
 ### List of all found keys and their meaning:
+##   Thanks to DragonSlayer on the Astrox Discord for the explanation!
 ##
 ## Descriptive information:
 #  SHIP_name                    Short descriptive name of the ship
 #  SHIP_description             Long text, description of the ship's type and usage
 #  SHIP_class                   The class of the ship: Shuttle, Frigate, ...
 #  SHIP_skill_level             The level needed in SHIP_class university courses to be able to fly the ship
-#  SHIP_type                    Faction of the ship: Fabricator, Excavation, ...
+#  SHIP_type                    Ship specific role and general purpose (Assault, Excavation, Transport...)
 #  SHIP_filename                Filename for the ship's data and image
 #  SHIP_manufacturer            Fluff, name of the factory that built the ship
 #  SHIP_manufacturer_icon       Icon of the manufacturer
@@ -146,24 +152,24 @@ delimiter['read_csv'] = ";"
 #  SHIP_base_energy             Total energy capacity
 #  SHIP_base_recharge           Energy recharge rate
 #  SHIP_base_mass               How 'heavy' the ship is.  Higher mass means lower speed and turn-rate
-#  SHIP_base_thrust             Accelleration of the ship
+#  SHIP_base_thrust             Acceleration of the ship
 #  SHIP_base_speed              Top speed without afterburner
 #  SHIP_base_turn               Turning speed of the ship
-#  SHIP_base_engine_burn        Rate at which engines use energy (lower is better)
+#  SHIP_base_engine_burn        Rate at which afterburner use energy (lower is better)
 #  SHIP_base_scan_pulsespeed    How fast the passive scanner scans
 #  SHIP_base_scan_pulserange    How far the passive scanner can target
 #  SHIP_base_scan_max_targets   Amount of objects the ship's passive scanner can target at once
 #  SHIP_base_scan_speed         Base speed of the active scanner
-#  SHIP_base_cargo              Cargo space in m²
+#  SHIP_base_cargo              Cargo space in mÂ²
 #  SHIP_base_price              Cost of the ship
 #  SHIP_base_drones             Amount of drones the ship can command
 #  SHIP_base_lifesupport        Lifesupport points of the ship's internal systems
-#  SHIP_specials_raw            Text describing the bonusses for a specific ship (Drone Range#0.30,Miner Strength#0.50)
+#  SHIP_specials_raw            Text describing the bonuses for a specific ship (Drone Range#0.30,Miner Strength#0.50)
 ##
 ## Resistances (All of these values are BEFORE any (potential) modifiers)
-#  SHIP_explosive_resistance    Resistance against missles
-#  SHIP_impact_resistance       Resistance against projectiles
-#  SHIP_energy_resistance       Resistance against beams & lasers
+#  SHIP_explosive_resistance    Resistance against explosive damage
+#  SHIP_impact_resistance       Resistance against impact damage
+#  SHIP_energy_resistance       Resistance against energy damage
 ##
 ## Mercenary & NPC related
 #  SHIP_level                   Mercenary: current level
@@ -177,15 +183,15 @@ delimiter['read_csv'] = ";"
 #  SHIP_shield                  Mercenary/NPC: Current shield points
 #  SHIP_owner                   Mercenary/NPC: Name of the pilot
 #  SHIP_loyalty                 Mercenary: current loyalty percentage
-#  SHIP_talent                  Mercenary: Determines the ship's loadout: Combat, Exploration, ...
+#  SHIP_talent                  Mercenary: Determines the ship's autotask activities (Patrol, Mine, Transport...)
 #  SHIP_faction_id              Mercenary/NPC: Used by the game to show the ship's faction
 ##
 ## Model related
 #  SHIP_material_texture_a      Main (base) texture
 #  SHIP_material_texture_b      Textures with details added on top
 #  SHIP_material_texture_c      Texture for parts that glow
-#  SHIP_material_color_a        Voodoo
-#  SHIP_material_color_b        Voodoo
+#  SHIP_material_color_a        Determine the color value for main textures (SHIP_material_texture_a and SHIP_material_texture_b)
+#  SHIP_material_color_b        Determine the color for internal lightning (SHIP_material_texture_c)
 #  SHIP_engine_color            Burn and trailing color of the engine(s)
 #  SHIP_collider_z              Unused
 #  SHIP_collider_y              Unused
@@ -248,3 +254,14 @@ def cleanLine(line, strip, delim):
 def commonListItems(l1, l2):
   l2Set = set(l2)
   return [x for x in l1 if x in l2Set]
+
+# Compares two lists and returns the valid items (incl comments)
+def validListItems(csvKeys, settingKeys):
+  result = []
+  csvSet = set(csvKeys)
+  for key in settingKeys:
+    if key[:2] == '//':
+      result.append(key)
+    elif key in csvSet:
+      result.append(key)
+  return result
